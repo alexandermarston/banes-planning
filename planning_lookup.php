@@ -29,17 +29,16 @@ class planning_lookup {
     }
 
     function getPlanningResults($ward, $parish) {
-        $url = "http://isharemaps.bathnes.gov.uk/data.aspx?requestType=parseTemplate&template=DevelopmentControlResults.tmplt&pageno=1&pagerecs=10&usesearch=true&order=DATEAPRECV%3ADESCENDING&q%3ALIKE=&dcapptyp%3ASRCH=&dcstat%3ASRCH=&apstat%3ASRCH=&ward%3ASRCH={$ward}&parish%3ASRCH={$parish}&dateapval%3AFROM%3ADATE=&dateactcom%3AFROM%3ADATE=&datedecisn%3AFROM%3ADATE=&daplstart%3AFROM%3ADATE=&dateappdec%3AFROM%3ADATE=";
+        $url = "http://isharemaps.bathnes.gov.uk/data.aspx?requestType=parseTemplate&template=DevelopmentControlResults.tmplt&pageno=1&pagerecs=10&usesearch=true&order=DATEAPRECV%3ADESCENDING&ward%3ASRCH={$ward}&parish%3ASRCH={$parish}";
 
         $i = 0;
         $articles = array();
-        
-        if (empty($ward) or empty($parish)) {
-            // either the ward, parish or both were not supplied.
-            // an empty array will be returned.
+
+        // Only return an empty array if BOTH $ward and $parish are empty.
+        if (empty($ward) && empty($parish)) {
             return $articles;
         }
-
+ 
         if ($this->isDomainAvailible($url)) {
             $html = file_get_html($url);
 
@@ -59,6 +58,9 @@ class planning_lookup {
                     $reference = $li->find('p', 2)->plaintext;
                     $item['reference'] = substr($reference, 23, 12);
                     $item['date'] = substr($reference, 48, 10);
+
+                    $item['description'] = $li->find('p', 1)->plaintext;
+                    $item['status'] = str_replace("Application status: ", "", $li->find('p', 4)->plaintext);
                     $articles[] = $item;
                 }
             }

@@ -21,103 +21,103 @@ foreach ($planningApplications as $planningApplication) {
 
 ### Ward & Parish codes
 
-Ward Name  | Ward Code
+Ward Code  | Ward Name
 ------------- | -------------
-Abbey |  AB
-Abbey |  ABB
-North Bathavon |  BATAN
-South Bathavon |  BATAS
-West Bathavon |  BATAW
-Bathwick |  BA
-Bloomfield |  BL
-North Valley Chew |  CVNTH
-South Valley Chew |  CVS
-Clutton |  CLUTN
-Down Combe |  CD
-Farmborough |  FARMB
-Littleton High |  HIGLN
-East Keynsham |  KEYNE
-North Keynsham |  KEYNN
-South Keynsham |  KEYNS
-Kingsmead |  KM
-Lambridge |  LB
-Lansdown/Lambridge |  LD_LB
-Lansdown |  LD
-Lyncombe |  LY
-Mendip |  MENDP
-North Norton Midsomer |  MIDNOR
-Redfield Norton Midsomer |  MIDRED
-Newbridge |  NB
-Down Odd |  ODD
-Oldfield |  OF
-Paulton |  PAON
-Peasedown |  PSJ
-John St Peasedown |  PESJ
-Whitchurch And Publow |  PUBWCH
-Radstock |  RADST
-Saltford |  SARD
-Southdown |  SD
-Record Test |  TEST
-Timsbury |  TIRY
-Twerton |  TW
-UNKNOWN |  UNK
-Walcot |  WA
-Westfield |  WELD
-Westmoreland |  WM
-Weston |  WT
-Widcombe |  WY
+WY  | Widcombe
+WT  | Weston
+WM  | Westmoreland
+WELD  | Westfield
+WA  | Walcot
+UNK  | UNKNOWN
+TW  | Twerton
+TIRY  | Timsbury
+TEST  | Test Record
+SD  | Southdown
+SARD  | Saltford
+RADST  | Radstock
+PUBWCH  | Publow And Whitchurch
+PESJ  | Peasedown St John
+PSJ  | Peasedown
+PAON  | Paulton
+OF  | Oldfield
+ODD  | Odd Down
+NB  | Newbridge
+MIDRED  | Midsomer Norton Redfield
+MIDNOR  | Midsomer Norton North
+MENDP  | Mendip
+LY  | Lyncombe
+LD  | Lansdown
+LB_LD  | Lambridge/Lansdown
+LB  | Lambridge
+KM  | Kingsmead
+KEYNS  | Keynsham South
+KEYNN  | Keynsham North
+KEYNE  | Keynsham East
+HIGLN  | High Littleton
+FARMB  | Farmborough
+CD  | Combe Down
+CLUTN  | Clutton
+CVS  | Chew Valley South
+CVNTH  | Chew Valley North
+BL  | Bloomfield
+BA  | Bathwick
+BATAW  | Bathavon West
+BATAS  | Bathavon South
+BATAN  | Bathavon North
+ABB  | Abbey
+AB  | Abbey
 
-Parish Name  | Parish Code
+Parish Code  | Parish Name
 ------------- | -------------
-Bathampton  | BATA
-Batheaston  | BATE
-Bathford  | BATF
-Cameley  | CAEY
-Camerton  | CAON
-Charlcombe  | CHBE
-Chelwood  | CHOD
-Magna Chew  | CHMA
-Stoke Chew  | CHST
-Claverton  | CLON
-Clutton  | CLTT
-Hay Combe  | COHA
-Dando Compton  | CODA
-Martin Compton  | COMA
-Corston  | COON
-Council Parish Tunley & Dunkerton  | DUON
-Harptree East  | EAHA
-Englishcombe  | ENBE
-Farmborough  | FAGH
-Gurney Farrington  | FAGU
-Freshford  | FRRD
-Littleton High  | HILI
-Blewett Hinton  | HIBL
-Charterhouse Hinton  | HICH
-Kelston  | KEON
-Council Town Keynsham  | KEYN
-Marksbury  | MARY
-Norton Midsomer  | MSN
-Combe Monkton  | MOCO
-Thrubwell Nempnett  | NETH
-Loe .St Newton  | NESL
-Northstoke  | NOST
-Malreward Norton  | NOMA
-Radstock Norton  | NORA
-Paulton  | PAON
-John St Peasedown  | PESJ
-Priston  | PRON
-Publow  | PUOW
-Radstock  | RADS
-Saltford  | SARD
-Shoscombe  | SHBE
-Stoke South  | SOKE
-Catherine .St  | STCA
-Drew Stanton  | STDR
-Sutton Stowey  | STSU
-Swainswick  | SWCK
-Timsbury  | TIRY
-Ubley  | UBEY
-Wellow  | WEOW
-Harptree West  | WEHA
-Westfield  | WESTF
-Whitchurch  | WHCH
+BATA |  Bathampton
+BATE |  Batheaston
+BATF |  Bathford
+CAEY |  Cameley
+CAON |  Camerton
+CHBE |  Charlcombe
+CHOD |  Chelwood
+CHMA |  Chew Magna
+CHST |  Chew Stoke
+CLON |  Claverton
+CLTT |  Clutton
+COHA |  Combe Hay
+CODA |  Compton Dando
+COMA |  Compton Martin
+COON |  Corston
+DUON |  Dunkerton & Tunley Parish Council
+EAHA |  East Harptree
+ENBE |  Englishcombe
+FAGH |  Farmborough
+FAGU |  Farrington Gurney
+FRRD |  Freshford
+HILI |  High Littleton
+HIBL |  Hinton Blewett
+HICH |  Hinton Charterhouse
+KEON |  Kelston
+KEYN |  Keynsham Town Council
+MARY |  Marksbury
+MSN |  Midsomer Norton
+MOCO |  Monkton Combe
+NETH |  Nempnett Thrubwell
+NESL |  Newton St. Loe
+NOST |  Northstoke
+NOMA |  Norton Malreward
+NORA |  Norton Radstock
+PAON |  Paulton
+PESJ |  Peasedown St John
+PRON |  Priston
+PUOW |  Publow
+RADS |  Radstock
+SARD |  Saltford
+SHBE |  Shoscombe
+SOKE |  South Stoke
+STCA |  St. Catherine
+STDR |  Stanton Drew
+STSU |  Stowey Sutton
+SWCK |  Swainswick
+TIRY |  Timsbury
+UBEY |  Ubley
+WEOW |  Wellow
+WEHA |  West Harptree
+WESTF |  Westfield
+WHCH |  Whitchurch
